@@ -14,10 +14,10 @@ py src/fit_params.py --data data/xy_data.csv
 ## Full Parameter Estimation (Automatic)
 
 To re-estimate theta , M, and X from raw data:
-
+```
 py -m pip install matplotlib numpy pandas scipy
 py src/full_estimation.py --data data/xy_data.csv --savefigs
-
+```
 This will:
 - Estimate initial values using PCA + envelope analysis
 - Refine parameters using L1 minimization
